@@ -463,59 +463,59 @@
         </button>
         <form action="#">
           <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-          <div class="modal-form">
+          <div class="modal__form">
             <label for="name"> Имя </label>
             <input
-              class="modal-input"
+              class="modal__input"
               type="text"
               name="name"
               id="name"
               required
               placeholder=" "
             />
-            <span class="svg-modal">
+            <span class="modal__icon">
               <svg width="18px" height="18px">
                 <use href="images/icons.svg#icon-name"></use>
               </svg>
             </span>
           </div>
 
-          <div class="form-input">
+          <div class="modal__form">
             <label for="tel"> Телефон </label>
             <input
-              class="modal-input"
+              class="modal__input"
               type="tel"
               name="tel"
               id="tel"
               required
               placeholder=" "
             />
-            <span class="svg-modal">
+            <span class="modal__icon">
               <svg width="18px" height="18px">
                 <use href="images/icons.svg#icon-phone"></use>
               </svg>
             </span>
           </div>
-          <div class="form-input">
+          <div class="modal__form">
             <label for="emeil"> Почта </label>
             <input
-              class="modal-input"
+              class="modal__input"
               type="emeil"
               name="emeil"
               id="emeil"
               required
               placeholder=" "
             />
-            <span class="svg-modal">
+            <span class="modal__icon">
               <svg width="18px" height="18px">
                 <use href="images/icons.svg#icon-emeil-modal"></use>
               </svg>
             </span>
           </div>
-          <div class="form-input">
+          <div class="modal__form">
             <label for="comment"> Комментарий </label>
             <textarea
-              class="textarea-input"
+              class="modal__textarea"
               name="comment"
               id="comment"
               rows="5"
@@ -523,16 +523,16 @@
             ></textarea>
           </div>
           <label class="check">
-            <input class="check-input" type="checkbox" name="agreement" />
-            <span class="check-box">
+            <input class="check__input" type="checkbox" name="agreement" />
+            <span class="check__icon">
               <svg width="11px" height="8">
                 <use href="images/icons.svg#icon-check"></use>
               </svg>
             </span>
             Соглашаюсь с рассылкой и принимаю &nbsp
-            <a class="terms-agreement" href="#"> Условия договора</a>
+            <a class="check__agreement" href="#"> Условия договора</a>
           </label>
-          <button class="form-button" type="submit">Отправить</button>
+          <button class="modal__btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
