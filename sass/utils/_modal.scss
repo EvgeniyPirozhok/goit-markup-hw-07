@@ -110,10 +110,12 @@
     left: 11px;
     fill: #212121;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__input:focus-within .modal__icon {
+
+.modal__input:focus-within & {
   fill: var(--accent-color);
 }
+}
+
 .modal__textarea{
   font-size: 12px;
   font-weight: 400;
@@ -130,15 +132,17 @@
   cursor: pointer;
   margin-bottom: 10px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__textarea::placeholder {
+
+  &::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal__textarea:focus {
+&:focus {
   border-color: var(--accent-color);
   outline: var(--accent-color);
 }
+}
+
 
 .check__input{
     position: absolute;
@@ -179,15 +183,15 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.check__input:checked + .check__icon {
-  border: transparent;
-  background-color: var(--accent-color);
-  fill: #ffffff;
-}
+    .check__input:checked + &{
+        border: transparent;
+        background-color: var(--accent-color);
+        fill: #ffffff;
+    }
+    .check:focus-within > &{
+        border-color: var(--accent-color);
+    }
 
-.check:focus-within > .check__icon {
-  border-color: var(--accent-color);
 }
 
 .modal__btn {
