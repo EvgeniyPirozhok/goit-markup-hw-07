@@ -30,16 +30,19 @@ img{
 /* акцент #2196F3 */
 /* вторичный цвет фона #F5F4FA */
 /* фон футер и герой #2F303A */
+
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .container{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
-h1,h2,h3,h4,h5,h6,p,ul{
-    margin-top: 0;
-    margin-bottom: 0;
-}
+
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -433,8 +436,8 @@ width: 270px;
     margin-top: 20px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address:hover,
-.adress:focus{
+.address__link-physical:hover,
+.adress__link-physical:focus{
     color: var(--accent-color);
     
 }
